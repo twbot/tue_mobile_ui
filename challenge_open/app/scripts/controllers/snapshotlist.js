@@ -93,7 +93,9 @@ angular.module('challengeOpenApp')
         return;
       }
 
-      console.log('Fit model!', data, x_ratio, y_ratio);
+      const name = prompt('How do you want to name this object?')
+
+      console.log('Fit model!', data, x_ratio, y_ratio, name);
       robot.ed.fit_model(data, x_ratio, y_ratio);
     };
 
